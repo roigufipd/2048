@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #e2e2e2,#c9d6ff);;
+  }
+  
+.wrapper{
+    width:100%
+}
+#return{
+        display: flex;
+    }
+
+#title-card{
+    margin-top: 100px;
+}
+#logoutbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6%;
+    padding: 12px;
+    background: #7494ec;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: 0.5s;
+
+}
+  #board {
+    width: 400px;
+    height: 400px;
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+  .tile {
+    width: 90px;
+     height: 90px;
+     border: 5px solid #bbada0;
+
+     font-size: 40px;
+     font-weight: bold;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  }
+  
+  .x2{
+    background: #eee4da;
+    color: #727371;
+  }
+  
+  .x4 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.x16{
+    background-color: #f59575;
+    color: white;
+}
+
+.x32{
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x64{
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x128{
+    background-color: #edce71;
+    color: white;
+}
+
+.x256{
+    background-color: #edcc63;
+    color: white;
+}
+
+.x512{
+    background-color: #edc651;
+    color: white;
+}
+
+.x1024{
+    background-color: #eec744;
+    color: white;
+}
+
+.x2048{
+    background-color: #ecc230;
+    color: white;
+}
+
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
+}
+
+  p {
+    font-size: 20px;
+  }
+
+ 
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+
+.pulse {
+  animation: pulseEffect 0.5s ease-in-out;
+}
+
+@keyframes pulseEffect {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+  100% { transform: scale(1); }
+}

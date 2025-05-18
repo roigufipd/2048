@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "login-register.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+    <div class="form-box" id="login-form" style="display: block">
+        
+                <h2>Login</h2>
+               
+                <input type="email" id ="login-email" placeholder = "Email" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button type = "submit" class = "btn" id="login-btn" onclick = "login()">PLAY 2048</button>
+                <div id="loginError" class="error-message"></div>
+                <div id="loginSuccess" class="success-message"></div>
+                <p>Don't have an account? <a href = "#" onclick ="toggleForms()">Register</a></p>
+
+            </form>
+        </div>
+
+        <div class="form-box" id="register-form" style="display: none">
+            
+                    <h2>Register</h2>
+                    <input type="text" id ="register-name" placeholder = "Name" required>
+                    <input type="email" id="register-email" placeholder="Email" required>
+                    <input type="password" id="register-password" placeholder="Password" required>
+                    <button type = "submit" class = "btn" id="register-btn" onclick ="register()">Register</button>
+                     <div id="registerError" class="error-message"></div>
+                    <div id="registerSuccess" class="success-message"></div>
+                    <p>Already have an account? <a href = "#" onclick = "toggleForms()">Login</a></p>
+                </form>
+            </div>
+
+    </div>
+
+    <script type = "module" src ="auth.js"></script>
+</body>
+</html>
